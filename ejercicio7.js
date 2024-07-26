@@ -14,32 +14,14 @@ const tracks = [
 ];
 
 // Añade tu código de bucle aquí
-titelsMetal = [];
-titlesRock = [];
-titlesPop = [];
-titlesCountry = [];
-titlesGrunge = [];
+genreTracks = {};
 
-genreTracks = {
-  Metal: (titelsMetal),
-  Rock: (titlesRock),
-  Pop: (titlesPop),
-  Country: (titlesCountry),
-  Grunge: (titlesGrunge),
+for (const track of tracks){
+  const {title, genre} = track;
+if (!genreTracks[genre]) {
+  genreTracks[genre] = [];
 }
-
-for (i = 0; i < tracks.length; i++) {
-if (tracks[i].genre === 'Metal') {
-  titelsMetal.push(tracks[i].title); 
-} else if (tracks[i].genre === 'Rock') {
-  titlesRock.push(tracks[i].title);
-} else if (tracks[i].genre === 'Pop') {
-  titlesPop.push(tracks[i].title);
-} else if (tracks[i].genre === 'Country') {
-  titlesCountry.push(tracks[i].title);
-} else {
-  titlesGrunge.push(tracks[i].title);
-}
+genreTracks[genre].push(title);
 }
 
 console.log (genreTracks);
