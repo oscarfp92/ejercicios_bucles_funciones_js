@@ -1,4 +1,4 @@
-//Utiliza un bucle para filtrar personajes de Star Wars por la especie "Human" y guárdales en un nuevo arrray llamado humanCharacters. Imprime este nuevo array por consola.
+// Utiliza un bucle para filtrar personajes de Star Wars por la especie "Human" y guárdales en un nuevo arrray llamado humanCharacters. Imprime este nuevo array por consola.
 
 const characters = [
   { name: 'Luke Skywalker', species: 'Human' },
