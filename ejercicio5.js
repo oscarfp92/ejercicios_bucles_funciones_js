@@ -20,4 +20,4 @@ for (i = 0; i < albums.length; i++) {
     durationTotal += albums[i].duration;
   }
 }
-console.log (durationTotal)
+console.log ("La duración total de los álbumes de Rock es: " + (durationTotal));

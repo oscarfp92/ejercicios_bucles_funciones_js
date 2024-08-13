@@ -22,5 +22,5 @@ const media = totalDuration / movies.length;
 return media;
 }
 
-console.log (averageMovieDuration(movies));
+console.log ("La duración media de las películas es: " + (averageMovieDuration(movies)));
 

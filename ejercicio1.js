@@ -15,7 +15,7 @@ const humanCharacters = [];
 
 // Añade tu código de bucle aquí
 for (i = 0; i < characters.length; i++) {
-  if (characters[i].species == "Human") {
+  if (characters[i].species === "Human") {
     humanCharacters.push (characters[i]);
   }
 }

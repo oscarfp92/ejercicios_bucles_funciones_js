@@ -23,4 +23,4 @@ for (i = 0; i < cartoons.length; i++) {
     oldestCartoon = cartoons[i].name;
   } 
 }
-console.log (oldestCartoon);
+console.log ("La serie más antigua es: " + (oldestCartoon));

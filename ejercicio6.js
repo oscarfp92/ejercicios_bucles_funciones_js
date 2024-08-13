@@ -28,7 +28,7 @@ for (i = 0; i < starWarsMovies.length; i++) {
     starWars80.push(starWarsMovies[i].title);
   } else if (starWarsMovies[i].releaseYear > 1990 && starWarsMovies[i].releaseYear < 2000) {
     starWars90.push(starWarsMovies[i].title);
-  } else if (starWarsMovies[i].releaseYear > 2000 && starWarsMovies[i].releaseYear < 2010){
+  } else if (starWarsMovies[i].releaseYear > 2000 && starWarsMovies[i].releaseYear < 2010) {
     starWars00.push (starWarsMovies[i].title);
   } else {
     starWars10.push (starWarsMovies[i].title);

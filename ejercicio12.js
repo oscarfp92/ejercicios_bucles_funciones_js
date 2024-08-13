@@ -1,26 +1,25 @@
-//Crea una función que, dada una lista de actores con su año de nacimiento, calcule su edad actual y retorne un nuevo array con los nombres de los actores y sus edades. Averigua como hallar el año actual en tus cálculos.
+/* Desarrolla una función que busque en un array de objetos representando mutantes, si existe alguno con un poder específico y retorne un mensaje indicando si fue encontrado o no. Considera el caso de múltiples mutantes con el mismo poder. */
 
-const actors = [
-  { name: 'Leonardo DiCaprio', born: 1974 },
-  { name: 'Tom Hanks', born: 1956 },
-  { name: 'Meryl Streep', born: 1949 },
-  { name: 'Brad Pitt', born: 1963 },
-  { name: 'Johnny Depp', born: 1963 },
-  { name: 'Scarlett Johansson', born: 1984 },
-  { name: 'Jennifer Lawrence', born: 1990 },
-  { name: 'Denzel Washington', born: 1954 },
-  { name: 'Morgan Freeman', born: 1937 },
-  { name: 'Cate Blanchett', born: 1969 }
+const mutants = [
+  { name: 'Wolverine', power: 'regeneration' },
+  { name: 'Magneto', power: 'magnetism' },
+  { name: 'Professor X', power: 'telepathy' },
+  { name: 'Jean Grey', power: 'telekinesis' },
+  { name: 'Rogue', power: 'power absorption' },
+  { name: 'Storm', power: 'weather manipulation' },
+  { name: 'Mystique', power: 'shape-shifting' },
+  { name: 'Beast', power: 'superhuman strength' },
+  { name: 'Colossus', power: 'steel skin' },
+  { name: 'Nightcrawler', power: 'teleportation' }
 ];
 
-function calculateActorsAges(actors) {
-  const result = [];
-  for (i = 0; i < actors.length; i++) {
-  const actor = actors[i];
-  const age = 2024 - actor.born;
-  result.push ({name: actor.name, age: age})
+function findMutantByPower(mutants, power) {
+  for (let i = 0; i < mutants.length; i++) {
+  if (mutants[i].power === power) {
+    return `El mutante con el poder de ${power} es: ${mutants[i].name}.`;
+  }
 }
-return result;
 }
 
-console.log (calculateActorsAges(actors))
+console.log (findMutantByPower (mutants, 'regeneration'));
+console.log (findMutantByPower (mutants, 'steel skin'));

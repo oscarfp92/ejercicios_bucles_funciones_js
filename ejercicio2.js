@@ -25,5 +25,5 @@ for (i = 0; i < movies.length; i++) {
   }
 }
 
-console.log (ant2000);
-console.log (post2000);
+console.log ("Películas anteriores al año 2000: " + (ant2000));
+console.log ("Películas posteriores al año 2000: " + (post2000));
